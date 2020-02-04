@@ -1,0 +1,16 @@
+<section class="integer">
+    <div class="con">
+        <div class="row">
+            <h2 class="integer__title col col-12">Integer bibendum sit amet <br /> arcu vel egestas</h2>
+            <ul class="integer__item col">
+                <li class="integer__link" *ngFor="let product of products" [ngClass]="[product.name]">
+                    <img [src]="product.Image" [alt]="product.name">
+                    <h5 class="integer__link__title">{{product.name}}</h5>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<app-services></app-services>
+<app-blog></app-blog>
+<app-solutions></app-solutions>

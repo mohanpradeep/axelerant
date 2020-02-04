@@ -1,0 +1,21 @@
+<section id="testimonials" class="blog">
+    <div class="con">
+        <div class="row">
+            <div class="col col-12">
+                <h2>Testimonials</h2>
+            </div>
+            <div class="col" *ngFor="let product of products">
+                <p class="blog__desc"><i class="icon-quote-left"></i>{{product.description}}<span></span></p> 
+                <div class="blog__all">
+                    <div class="blog__img">
+                        <img [src]="product.Image" [alt]="product.name"/>
+                    </div>
+                    <div class="blog__content">
+                        <h4 class="blog__content__name">{{product.name}}</h4>
+                        <p class="blog__content__position">{{product.position}} </p>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,46 @@
+.integer{
+    background-image: url(../../../assets/Images/hader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    @media only screen and (max-width: 600px) {
+        padding: 30px 0;
+    }
+    &__item{
+        display: flex;
+        justify-content: center;
+        margin: 15px auto;
+        @media only screen and (max-width: 600px) {
+            display: block;
+            margin: auto;
+        }
+    }
+    &__link{
+        border: solid 1px #47443f;
+        border-radius: 5px;
+        padding: 40px;
+        margin: 0 10px;
+        width: 20%;
+        @media only screen and (min-width: 601px) and (max-width: 1200px){
+            width: auto;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+            margin: 10px auto;
+            display: flex;
+            padding: 15px;
+            align-items: center;
+        }
+        &__title{
+            margin: 4px 0 0;
+            font-weight: 400;
+            font-size: 0.9375rem;
+            @media only screen and (max-width: 600px) {
+                padding-left: 20px;
+            }
+        }
+    }
+}

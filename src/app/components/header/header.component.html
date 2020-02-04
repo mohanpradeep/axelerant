@@ -1,0 +1,30 @@
+<header>
+<nav class="nav">
+  <div class="con">
+    <div class="row">
+      <div class="display">
+        <a class="moble" (click)="clickEvent()"><i [ngClass]="status ? 'icon-cancel' : 'icon-bars'"></i></a>
+        <a class="nav__logo" routerLink="home">COMPANY <span>LOGO</span></a>
+        <div class="collapse navbar-collapse">
+          <a class="moble" routerLinkActive="active"><i class="icon-bubble"></i></a>
+          <ul class="nav__item" [ngClass]="status ? 'success' : 'danger'">
+            <li class="nav__link">
+              <a routerLink="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About</a>
+            </li>
+            <li class="nav__link">
+              <a routerLink="services" routerLinkActive="active">Services</a>
+            </li>
+            <li class="nav__link">
+              <a routerLink="solutions" routerLinkActive="active">solutions</a>
+            </li>
+            <li class="nav__link">
+                <a routerLink="blog" routerLinkActive="active">Blog</a>
+            </li>
+          </ul>
+          <button class="btn"><i class="icon-bubble"></i>Get In Touch</button>
+    </div>
+    </div>
+  </div>
+  </div>
+  </nav>
+</header>

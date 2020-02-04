@@ -1,0 +1,78 @@
+header {
+    background-color: #161513;
+    padding: 1.5rem 0;
+    @media only screen and (max-width: 600px) {
+        padding: 1rem;  
+    }
+    .navbar-collapse{
+        display: inline-flex;
+        .btn{
+            padding-left: 1rem;
+            padding-right: 1rem;
+            @media only screen and (max-width: 600px) {
+                display: none;
+            } 
+        }
+    }
+}
+.display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.nav {
+    &__logo{
+        color:seashell;
+        span{
+            color: #ee3c00;
+        }
+    }
+    &__link {
+        padding: 5px 1.8vw;
+        display: inline-block;
+        @media only screen and (min-width: 601px) and (max-width: 1200px){
+            padding: 5px 1vw;
+        }
+        @media only screen and (max-width: 600px) {
+            display: block;
+            border-top:solid 1px #1f1f1f;
+        }
+        a{
+            color: #aca4a1;
+            &.active{
+                color: #fff;
+            }
+        }
+    }
+    &__item{
+        display: block;
+        @media only screen and (max-width: 600px) {
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            z-index: 9;
+            width: 100%;
+            background-color: #161513
+        }
+        &.success{
+            display: block;
+
+        }
+    }
+
+}
+.moble{
+    display: none;
+    i{
+        color: #fff;
+        &:before{
+            vertical-align: middle;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        display: block;
+    }
+}
